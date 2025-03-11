@@ -1,0 +1,70 @@
+1)sumof natural numbers
+
+ def sum_natural_numbers(n):
+    total = 0
+    for i in range(1, n + 1):
+        total += i
+    return total
+
+n = int(input("Enter a number: "))
+print("Sum of natural numbers:", sum_natural_numbers(n))
+
+
+
+2)
+
+def is_prime(n):
+    if n < 2:
+        return False
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+
+n = int(input("Enter a number: "))
+if is_prime(n):
+    print(n, "is a prime number.")
+else:
+    print(n, "is not a prime number.")
+
+
+
+
+3)
+
+def find_max(a, b, c):
+    return max(a, b, c)
+
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+c = int(input("Enter third number: "))
+
+print("The largest number is:", find_max(a, b, c))
+
+
+
+
+
+
+4)
+
+
+def factorial(n):
+    result = 1
+    for i in range(1, n + 1):
+        result *= i
+    return result
+
+n = int(input("Enter a number: "))
+print("Factorial of", n, "is", factorial(n))
+
+
+
+5)
+
+
+def even_or_odd(n):
+    return "Even" if n % 2 == 0 else "Odd"
+
+n = int(input("Enter a number: "))
+print(n, "is", even_or_odd(n))
